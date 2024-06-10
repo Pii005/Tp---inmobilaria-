@@ -1,0 +1,347 @@
+header
+{
+    
+    background-image: url(./Imagenes/header.jpg);
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 80vh;
+    width: 100%;
+    
+}
+
+.Barra-inicial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Barra-inicial img {
+    padding-top: 5px;
+    padding-left: 15px ;
+    /*margin-right: 20px;  Ajusta este valor según la cantidad de espacio que desees */
+}
+
+.Barra-inicial ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    margin: 0;
+    padding: 0;
+}
+
+.Barra-inicial li {
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; /* Para que los elementos de la lista se alineen horizontalmente */
+    margin: 10px; /* Espacio entre elementos de la lista, ajusta según tus necesidades */
+    padding: 10px;
+}
+
+.Barra-inicial a {
+    
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Cambia el color del texto de los enlaces si lo necesitas */
+}
+
+
+header h1
+{
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 700px;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    letter-spacing: 1px;
+    
+
+}
+
+
+/* NOSOTROS */
+.cuadros-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    
+}
+
+.section-Nosotros h2
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cuadro {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #fffa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.cuadro img {
+    max-width: 80%;
+    margin-top: 50px
+}
+
+.cuadro h3 {
+    margin: 50px 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.cuadro p {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* ANUNCIOS */
+.section-Anuncios
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.section-Anuncios h2
+{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+
+.cuadrados-anuncios
+{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    
+}
+
+.anuncios 
+{
+    /*border: 1px solid rgba(0, 0, 0, 0.389);*/
+    padding: 5px;
+}
+
+.anuncios img
+{
+    max-width: 80%;
+    margin: 0px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+
+.anuncios h3
+{
+    /*max-width: 90%;*/
+    margin-left: 60px;
+    font-size: 25px;
+}
+
+.anuncios p 
+{
+    margin-left: 60px;
+    font-size: 15px;
+    margin-right: 60px;
+}
+
+.anuncios b
+{
+    color: green;
+    margin-left: 60px;
+    font-size: 15px;
+}
+
+.anuncios_iconos
+{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    
+}
+
+
+.anuncios_iconos img
+{
+    /*max-width: 100px;  Ajusta el tamaño máximo de las imágenes */
+    margin: 5px;
+    margin-right: 5px;
+    
+}
+
+.anuncios h4 {
+    margin: 0;
+    margin-top: 8px;
+    font-size: 25px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+.anuncios button
+{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 20px;
+    width: 60%;
+    box-sizing: border-box;
+    margin-left: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+    box-shadow: 0px 0px 0px #0001;
+    background-color:  orange;
+    
+    
+}
+
+
+/* CONTACTOS */
+
+.section-contactos
+{
+    background-image: url(./Imagenes/encuentra.jpg);
+    /*width: 100%;*/
+    margin-top: 40px;
+    margin-bottom: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 40vh;
+}
+
+
+
+.section-contactos h2
+{
+    margin: 50px;
+    margin-top: 100px;;
+    color: white;
+    font-size: 40px;
+    font-weight: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+.section-contactos h3{
+    margin: 0px;
+    margin-left: 50px;
+    margin-bottom: 35px;;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+.section-contactos button
+{
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left : 60PX;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.389);
+
+    background-color:  rgb(245, 159, 0);
+}
+
+
+/* blog */
+
+.section-blog {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.blog-details {
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-details h2 {
+    text-align: center; 
+}
+
+.casas-details {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.casas-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.text-content {
+    margin-left: 10px; 
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content h3
+{
+    margin: 0;
+    font-size: 20px;
+}
+.text-content p 
+{
+    margin: 0;
+    font-size: 14px; 
+}
+
+.casas-item img{
+    max-width: 50%;
+    margin: 30px;
+}
+
+.blog-comentarios {
+    width: 45%;
+}

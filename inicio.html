@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <script src="inicio.js"></script> 
+
+    <link rel="icon" type="Imagenes/x-icon" href="./Imagenes/logo.svg">
+    <title>Inmobilaria</title>
+</head>
+<body>
+    <header>
+        <div class="Barra-inicial">
+            <img src="./Imagenes/logo.svg" alt="BienesRaices">
+
+            <nav>
+                <ul>
+                    <li class="barra-iconos"><a  href="#">Nosotros</a> </li>
+                    <li class="barra-iconos"><a  href="#">Anuncios</a></li>
+                    <li class="barra-iconos"><a  href="#">Contacto</a></li>
+                    <li class="barra-iconos"><a  href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Venta de casa y departamentos 
+            Exclusivo de lujos</h1>
+        
+
+    </header>
+
+    <section class="section-Nosotros">
+        <h2>Más Sobre Nosotros</h2>
+        <div class="cuadros-container">
+            <div  class=" cuadro">
+                <img src="./Imagenes/icono1.svg" alt="Icono Seguridad" />
+                <h3>Seguridad</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
+            </div>
+
+            <div class="cuadro">
+                <img src="./Imagenes/icono2.svg" alt="Icono Precio" />
+                <h3>El mejor precio</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
+            </div>
+
+            <div class="cuadro">
+                <img src="./Imagenes/icono3.svg" alt="Icono Tiempo" />
+                <h3>A tiempo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-Anuncios">
+        <h2>Casas y departamentos en Venta</h2>
+        <div class="cuadrados-anuncios">
+
+            <div class="anuncios">
+                <img src="./Imagenes/anuncio1.jpg" onclick="abrirPagina('https://ar.pinterest.com/piflores005/')">
+                <h3>Casa de Lujo en el Lago</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
+                <b>u$s350.000</b>
+                <div class="anuncios_iconos">
+                    <img src="./Imagenes/icono_wc.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_estacionamiento.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_dormitorio.svg">
+                    <h4>4</h4>
+                </div>
+                <button onclick="abrirPagina('https://ar.pinterest.com/piflores005/')" type="button">Ver propiedad</button>
+            </div>
+            
+            <div class="anuncios">
+                <img src="./Imagenes/anuncio2.jpg" onclick="abrirPagina('https://classroom.google.com')">
+                <h3>casa terminados de lujo</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
+                <b>u$s275.000</b>
+                <div class="anuncios_iconos">
+                    <img src="./Imagenes/icono_wc.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_estacionamiento.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_dormitorio.svg">
+                    <h4>4</h4>
+                </div>
+                <button onclick="abrirPagina('https://classroom.google.com')" type="button">Ver propiedad</button>
+            </div>
+            
+            <div class="anuncios">
+                <img src="./Imagenes/anuncio3.jpg" onclick="abrirPagina('https://github.com/agusb98D/LAB-III-A331-1-2024-1Cuatri/blob/main/03/index.html')">
+                <h3>Casa con pileta</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
+                <b>u$s250.000</b>
+                <div class="anuncios_iconos">
+                    <img src="./Imagenes/icono_wc.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_estacionamiento.svg">
+                    <h4>3</h4>
+                    <img src="./Imagenes/icono_dormitorio.svg">
+                    <h4>4</h4>
+                </div>
+                <button onclick="abrirPagina('https://github.com/agusb98D/LAB-III-A331-1-2024-1Cuatri/blob/main/03/index.html')" type="button">Ver propiedad</button>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="section-contactos">
+
+        <h2>Encuentra la casa de tus sueños</h2>
+        <h3>Llena el formulario de contacto y un asesor se pondra en contacto a la brevedad</h3>
+
+        <button type="Contactanos">Contactanós</button>    
+
+    </section>
+
+    <section class="section-blog">
+        <div class="blog-container">
+            <div class="blog-details blog-casas">
+                <h2>Nuestro Blog</h2>
+                <div class="casas-details">
+                    <div class="casas-item">
+                        <img src="./Imagenes/blog1.jpg" alt="Anuncio 1" />
+                        <div class="text-content">
+                            <h3>Terraza en el techo de tu casa</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident debitis labore</p>
+                        </div>
+                    </div>
+                    <div class="casas-item">
+                        <img src="./Imagenes/blog2.jpg" alt="Anuncio 2" />
+                        <div class="text-content">
+                            <h3>Terraza en el techo de tu casa</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident debitis labore</p>
+                        </div>
+                    </div>
+                </div>
+    
+            <div class="blog-details blog-comentarios">
+                <h2>blog-comentarios</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus saepe nisi numquam minus modi, quas iure voluptatem nihil molestiae minima, tempore illum nam est id eaque qui dolore similique?</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav class="footer-details">
+            <ul>
+                <li><a href="#">Nosotros</a> </li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+
+        <p>Todos los derechos reservados <date>2024</date> copy;</p>
+
+    </footer>
+
+</body>
+</html>
