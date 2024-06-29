@@ -44,7 +44,7 @@ function crearAnuncios() {
           <h3>${anuncio.title}</h3>
           <p>${anuncio.text}</p>
           <b>${anuncio.price}</b>
-          <div class="anuncios_iconos">
+          <div class="anuncios_iconos ">
               <img src="./Imagenes/icono_wc.svg">
               <h4>${anuncio.wc}</h4>
               <img src="./Imagenes/icono_estacionamiento.svg">
