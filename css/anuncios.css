@@ -1,0 +1,93 @@
+
+.section-Anuncios h2
+{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px
+}
+
+.section-Anuncios {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cuadrados-anuncios {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.anuncios {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.anuncios img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.anuncios:hover {
+    transform: translateY(-10px);
+}
+
+.anuncios h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.anuncios p {
+    padding: 0 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.anuncios b {
+    display: block;
+    padding: 0 10px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #5fc951;
+}
+
+.anuncios_iconos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f8f8;
+}
+
+.anuncios_iconos img {
+    width: 24px;
+    height: 24px;
+}
+
+.anuncios_iconos h4 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.anuncios button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.anuncios button:hover {
+    background-color: darkorange;
+}

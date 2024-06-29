@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "TP - inmobilaria",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TP - inmobilaria"
+	}
+}

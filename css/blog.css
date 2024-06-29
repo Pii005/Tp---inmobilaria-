@@ -1,0 +1,89 @@
+/* blog */
+.section-blog {
+    margin: 10px;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+    width: 100%;
+    max-width: 1200px; /* Ancho máximo del contenedor */
+}
+
+.blog-details {
+    width: 48%; /* Ancho para cada sección para que se distribuyan uniformemente */
+}
+
+.blog-details h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.casas-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.casas-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.text-content {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.text-content h3 {
+    margin: 0;
+    font-size: 20px;
+    align-items: right;
+}
+
+.text-content p h3{
+    margin: 5px 0;
+    font-size: 8px;
+}
+
+.casas-item img {
+    max-width: 250px;
+    height: auto;
+}
+
+.blog-comentarios {
+    width: 48%;
+    
+    padding: 20px;
+}
+
+.text-content h3 {
+    margin: 0;
+    font-size: 20px;
+    text-align: right; /* Alinea el h3 a la derecha */
+}
+
+blockquote {
+    font-style: italic;
+    padding: 10px;
+    background-color: #32a852; /* Fondo verde */
+    border-radius: 8px;
+    color: white; /* Texto blanco */
+}
+
+blockquote footer {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+}

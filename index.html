@@ -3,48 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inicio.css">
-    <script src="inicio.js"></script> 
+    
+    <link rel="stylesheet" href="./css/anuncios.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/contactos.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/nosotros.css">
+
+
+    <link rel="stylesheet" href="./css/whatsapp.css">
+    <script src="./js/inicio.js"></script> 
+    <script src="./js/blog.js"></script> 
+<!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./boostrap/bootstrap.min.css">
 
     <link rel="icon" type="Imagenes/x-icon" href="./Imagenes/logo.svg">
+
     <title>Inmobilaria</title>
 </head>
 <body>
     <header>
-        <div class="Barra-inicial">
-            <img src="./Imagenes/logo.svg" alt="BienesRaices">
+        <div class="Barra-inicial row">
+            <div class="col-sm-8 col-md-8 col-lg-8">
+                <img src="./Imagenes/logo.svg" alt="BienesRaices">
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <nav>
+                    <ul>
+                        <li class="barra-iconos"><a  href="#">Nosotros</a> </li>
+                        <li class="barra-iconos"><a  href="#">Anuncios</a></li>
+                        <li class="barra-iconos"><a  href="#">Contacto</a></li>
+                        <li class="barra-iconos"><a  href="#">Blog</a></li>
+                    </ul>
+                </nav>
 
-            <nav>
-                <ul>
-                    <li class="barra-iconos"><a  href="#">Nosotros</a> </li>
-                    <li class="barra-iconos"><a  href="#">Anuncios</a></li>
-                    <li class="barra-iconos"><a  href="#">Contacto</a></li>
-                    <li class="barra-iconos"><a  href="#">Blog</a></li>
-                </ul>
-            </nav>
+            </div>
         </div>
-        <h1>Venta de casa y departamentos 
-            Exclusivo de lujos</h1>
-        
+        <div class="col-sm-8 col-md-8 col-lg-8">
+            <h1>Venta de casa y departamentos 
+                Exclusivo de lujos</h1>
+        </div>
 
     </header>
 
     <section class="section-Nosotros">
         <h2>Más Sobre Nosotros</h2>
-        <div class="cuadros-container">
-            <div  class=" cuadro">
+        <div class="cuadros-container ">
+            <div  class=" cuadro col-sm-4 col-md-4 col-lg-4">
                 <img src="./Imagenes/icono1.svg" alt="Icono Seguridad" />
                 <h3>Seguridad</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
             </div>
 
-            <div class="cuadro">
+            <div class="cuadro col-sm-4 col-md-4 col-lg-4">
                 <img src="./Imagenes/icono2.svg" alt="Icono Precio" />
                 <h3>El mejor precio</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
             </div>
 
-            <div class="cuadro">
+            <div class="cuadro col-sm-4 col-md-4 col-lg-4">
                 <img src="./Imagenes/icono3.svg" alt="Icono Tiempo" />
                 <h3>A tiempo</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</p>
@@ -52,7 +72,7 @@
         </div>
     </section>
 
-
+|<!-- ANUNCIOS
     <section class="section-Anuncios">
         <h2>Casas y departamentos en Venta</h2>
         <div class="cuadrados-anuncios">
@@ -106,8 +126,12 @@
             </div>
 
         </div>
-    </section>
+    </section> -->
 
+    <section class="section-Anuncios">
+        <h2>Casas y departamentos en Venta</h2>
+        <div id="anuncios-container" class="cuadrados-anuncios"></div>
+    </section>
     
     <section class="section-contactos">
 
@@ -118,36 +142,33 @@
 
     </section>
 
-    <section class="section-blog">
-        <div class="blog-container">
+    <section class="section-blog row">
+        <div class="blog-container ">
             <div class="blog-details blog-casas">
                 <h2>Nuestro Blog</h2>
-                <div class="casas-details">
-                    <div class="casas-item">
-                        <img src="./Imagenes/blog1.jpg" alt="Anuncio 1" />
-                        <div class="text-content">
-                            <h3>Terraza en el techo de tu casa</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident debitis labore</p>
-                        </div>
-                    </div>
-                    <div class="casas-item">
-                        <img src="./Imagenes/blog2.jpg" alt="Anuncio 2" />
-                        <div class="text-content">
-                            <h3>Terraza en el techo de tu casa</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident debitis labore</p>
-                        </div>
-                    </div>
+                <div id="nuestro-blog" class="casas-details">
+                    <!-- Las tarjetas de los blogs se añadirán aquí mediante JavaScript -->
                 </div>
-    
+            </div>
             <div class="blog-details blog-comentarios">
-                <h2>blog-comentarios</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas natus saepe nisi numquam minus modi, quas iure voluptatem nihil molestiae minima, tempore illum nam est id eaque qui dolore similique?</p>
+                <h2>Comentarios</h2>
+                <blockquote>
+                    <h3>"El personal se comportó de una excelente forma, 
+                        muy buena atención y la casa que me ofrecieron cumple 
+                        con todas mis expectativas."</h3>
+                    <p>- Juan Perez</p>
+                </blockquote>
             </div>
         </div>
     </section>
     
+    
+
+
+
+
     <footer>
-        <nav class="footer-details">
+        <!-- <nav class="footer-details">
             <ul>
                 <li><a href="#">Nosotros</a> </li>
                 <li><a href="#">Anuncios</a></li>
@@ -156,9 +177,41 @@
             </ul>
         </nav>
 
-        <p>Todos los derechos reservados <date>2024</date> copy;</p>
-
+        <p>Todos los derechos reservados <date>2024</date></p> -->
     </footer>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Anuncios</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+            Todos los derechos reservados <date>2024</date>
+        </span>
+        </div>
+    </div>
+    </nav>
+
+<!-- Botón de WhatsApp /*href="https://wa.me/numero"*/  -->
+    <a  class="whatsapp-button" target="_blank">
+        <img src="./Imagenes/whatpp.png" alt="WhatsApp">
+    </a>
+
+
 
 </body>
 </html>
