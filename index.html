@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/nosotros.css">
-
-
     <link rel="stylesheet" href="./css/whatsapp.css">
-    <script src="./js/inicio.js"></script> 
-    <script src="./js/blog.js"></script> 
+
+
+    <!-- <script src="./js/blog.js"></script>  -->
 <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./boostrap/bootstrap.min.css">
+
+    <!-- Handlebars -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script> -->
+    <script src="./js/index.js" defer></script>
 
     <link rel="icon" type="Imagenes/x-icon" href="./Imagenes/logo.svg">
 
@@ -72,74 +75,64 @@
                 <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam minus cupiditate maiores eius, 
                     accusamus blanditiis qui culpa sed omnis hic modi doloribus nihil eveniet! Veniam consequatur eum dicta eligendi dolorum?</b>
             </div>
-        </div>s
+        </div>
     </section>
 
 
 
 
 
-|<!-- ANUNCIOS
-    <section class="section-Anuncios">
-        <h2>Casas y departamentos en Venta</h2>
-        <div class="cuadrados-anuncios">
+    <!-- ANUNCIOS  -->
+    <h2 class="section-Anuncios">Casas y departamentos en Venta</h2>
+    <div id="Anuncios" class="section-Anuncios card-group"></div>
 
-            <div class="anuncios">
-                <img src="./Imagenes/anuncio1.jpg" onclick="abrirPagina('https://ar.pinterest.com/piflores005/')">
-                <h3>Casa de Lujo en el Lago</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
-                <b>u$s350.000</b>
-                <div class="anuncios_iconos">
-                    <img src="./Imagenes/icono_wc.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_estacionamiento.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_dormitorio.svg">
-                    <h4>4</h4>
-                </div>
-                <button onclick="abrirPagina('https://ar.pinterest.com/piflores005/')" type="button">Ver propiedad</button>
+    <template id="anuncios-template">
+        <div class="anuncios">
+            <img class="imagen-casa" src="">
+            <h3 class="titulo-casa"></h3>
+            <p class="text-casa"></p>
+            <b class="price-casa"></b>
+            <div class="anuncios_iconos">
+                <img src="./Imagenes/icono_wc.svg">
+                <h4 class="wc-iconos"></h4>
+                <img src="./Imagenes/icono_estacionamiento.svg">
+                <h4 class="car-iconos"></h4>
+                <img src="./Imagenes/icono_dormitorio.svg">
+                <h4 class="camas-iconos"></h4>
             </div>
-            
-            <div class="anuncios">
-                <img src="./Imagenes/anuncio2.jpg" onclick="abrirPagina('https://classroom.google.com')">
-                <h3>casa terminados de lujo</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
-                <b>u$s275.000</b>
-                <div class="anuncios_iconos">
-                    <img src="./Imagenes/icono_wc.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_estacionamiento.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_dormitorio.svg">
-                    <h4>4</h4>
-                </div>
-                <button onclick="abrirPagina('https://classroom.google.com')" type="button">Ver propiedad</button>
-            </div>
-            
-            <div class="anuncios">
-                <img src="./Imagenes/anuncio3.jpg" onclick="abrirPagina('https://github.com/agusb98D/LAB-III-A331-1-2024-1Cuatri/blob/main/03/index.html')">
-                <h3>Casa con pileta</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae at</p>
-                <b>u$s250.000</b>
-                <div class="anuncios_iconos">
-                    <img src="./Imagenes/icono_wc.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_estacionamiento.svg">
-                    <h4>3</h4>
-                    <img src="./Imagenes/icono_dormitorio.svg">
-                    <h4>4</h4>
-                </div>
-                <button onclick="abrirPagina('https://github.com/agusb98D/LAB-III-A331-1-2024-1Cuatri/blob/main/03/index.html')" type="button">Ver propiedad</button>
-            </div>
-
+            <button class="ver-propiedad" type="button">Ver propiedad</button>
         </div>
-    </section> -->
+    </template>
 
+
+
+<!-- `<img src="${anuncio.img}" onclick="abrirPagina('${anuncio.link}')">
+        <h3>${anuncio.title}</h3>
+        <p>${anuncio.text}</p>
+        <b>${anuncio.price}</b>
+        <div class="anuncios_iconos ">
+            <img src="./Imagenes/icono_wc.svg">
+            <h4>${anuncio.wc}</h4>
+            <img src="./Imagenes/icono_estacionamiento.svg">
+            <h4>${anuncio.estacionamiento}</h4>
+            <img src="./Imagenes/icono_dormitorio.svg">
+            <h4>${anuncio.dormitorios}</h4>
+        </div>
+        <button onclick="abrirPagina('${anuncio.link}')" type="button">Ver propiedad</button>`;
+        
     <section class="section-Anuncios card-group">
         <h2>Casas y departamentos en Venta</h2>
         <div id="anuncios-container" class="cuadrados-anuncios"></div>
     </section>
-    
+        
+        
+        -->
+
+
+
+
+
+
     <section class="section-contactos">
 
         <h2>Encuentra la casa de tus sueños</h2>
@@ -150,6 +143,7 @@
     </section>
 
     <section class="section-blog row">
+
         <div class="blog-container ">
             <div class="blog-details blog-casas">
                 <h2>Nuestro Blog</h2>
@@ -175,43 +169,33 @@
 
 
     <footer>
-        <!-- <nav class="footer-details">
-            <ul>
-                <li><a href="#">Nosotros</a> </li>
-                <li><a href="#">Anuncios</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Blog</a></li>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Anuncios</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+                </li>
             </ul>
-        </nav>
-
-        <p>Todos los derechos reservados <date>2024</date></p> -->
-    </footer>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Nosotros</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Anuncios</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-            </li>
-        </ul>
-        <span class="navbar-text">
-            Todos los derechos reservados <date>2024</date>
-        </span>
+            <span class="navbar-text">
+                Todos los derechos reservados <date>2024</date>
+            </span>
+            </div>
         </div>
-    </div>
-    </nav>
+        </nav>
+    </footer>
 
 <!-- Botón de WhatsApp /*href="https://wa.me/numero"*/  -->
     <a  class="whatsapp-button" target="_blank">

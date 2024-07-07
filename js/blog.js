@@ -40,7 +40,9 @@ function cardsBlog() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', cardsBlog);
+
+
+
 
 
 
